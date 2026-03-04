@@ -509,6 +509,283 @@ a {
     font-size: 0.85rem;
 }
 
+/* Pricing Footer */
+.pricing-footer {
+    text-align: center;
+    margin-top: 48px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* Reviews */
+.reviews-section {
+    padding: 100px 0;
+}
+
+.reviews-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 64px;
+}
+
+.reviews-header-left {
+    max-width: 600px;
+}
+
+.reviews-header-left h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+    color: var(--text-main);
+    line-height: 1.2;
+}
+
+.reviews-header-left p {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+}
+
+.reviews-header-right {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.rating-info h4 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--text-main);
+}
+
+.rating-info p {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+}
+
+.google-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--bg-white);
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.google-mini-logo {
+    width: 20px;
+    height: 20px;
+}
+
+.google-rating .stars i {
+    font-size: 0.85rem;
+}
+
+.rating-number {
+    font-weight: 800;
+    font-size: 1rem;
+    margin-left: 4px;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+.review-card {
+    background-color: var(--bg-white);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 40px;
+}
+
+.review-category {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--primary);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.review-card .stars {
+    margin-bottom: 24px;
+}
+
+.review-text {
+    font-size: 1.05rem;
+    color: var(--text-main);
+    line-height: 1.7;
+    margin-bottom: 32px;
+    font-weight: 400;
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    border-top: 1px solid var(--border-light);
+    padding-top: 24px;
+}
+
+.reviewer-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviewer-info h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.reviewer-info p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.google-watermark {
+    position: absolute;
+    right: 0;
+    top: 36px;
+    width: 24px;
+    opacity: 0.5;
+}
+
+.reviews-footer {
+    text-align: center;
+}
+
+.btn-outline-gray {
+    background-color: transparent;
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+    gap: 8px;
+}
+
+.btn-outline-gray:hover {
+    background-color: var(--bg-alt);
+    border-color: #CBD5E1;
+}
+
+.btn-outline-gray i {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* FAQ */
+.faq-section {
+    padding: 100px 0;
+}
+
+.bg-alt {
+    background-color: var(--bg-alt);
+}
+
+.faq-container {
+    max-width: 800px;
+}
+
+.faq-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.faq-item {
+    background-color: var(--bg-white);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.faq-item.active {
+    border-color: var(--primary);
+    box-shadow: 0 8px 24px rgba(14, 165, 233, 0.08);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px;
+    cursor: pointer;
+}
+
+.faq-question h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.faq-toggle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--bg-alt);
+    border: none;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faq-item.active .faq-toggle {
+    background-color: var(--primary);
+    color: white;
+}
+
+.faq-answer {
+    padding: 0 32px 32px;
+}
+
+.faq-answer p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* CTA Banner */
+.cta-banner {
+    background-color: var(--dark-band);
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+}
+
+.cta-container {
+    max-width: 800px;
+}
+
+.cta-banner h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+}
+
+.cta-banner p {
+    font-size: 1.15rem;
+    color: #94A3B8;
+    margin-bottom: 40px;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
 @media (max-width: 1024px) {
     .pricing-grid {
         grid-template-columns: 1fr;
