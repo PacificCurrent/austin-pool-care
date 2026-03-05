@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         question.addEventListener('click', () => {
             const isActive = item.classList.contains('active');
-            
+
             // Close all others
             faqItems.forEach(otherItem => {
                 otherItem.classList.remove('active');
