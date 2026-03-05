@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Azure Pool Care | Austin, TX</title>
+    <title>{{business_name}} | {{city}}, {{state}}</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
     <header class="main-header">
         <div class="container header-container">
             <div class="logo">
-                <a href="#">Azure.</a>
+                <a href="#">{{short_name}}.</a>
             </div>
             <nav class="main-nav">
                 <ul>
@@ -30,7 +30,7 @@
                 </ul>
             </nav>
             <div class="header-right">
-                <a href="tel:5125557890" class="phone-link"><i class="fas fa-phone-alt"></i> (512) 555-7890</a>
+                <a href="tel:{{phone_raw}}" class="phone-link"><i class="fas fa-phone-alt"></i> {{phone}}</a>
                 <a href="#contact" class="btn btn-primary">Free Quote</a>
             </div>
         </div>
@@ -47,11 +47,11 @@
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                 class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
-                        <span>4.9★ RATED • 500+ AUSTIN FAMILIES TRUST US</span>
+                        <span>{{rating}}★ RATED • {{reviews_count}}+ {{city|upper}} FAMILIES TRUST US</span>
                     </div>
-                    <h1>Austin's Pool Care,<br><span class="text-gradient">Done Right.</span></h1>
+                    <h1>{{city}}'s Pool Care,<br><span class="text-gradient">Done Right.</span></h1>
                     <p class="hero-description">We handle the chemistry and the sweat so you can just enjoy the splash.
-                        Weekly maintenance, repairs, and green pool recovery from your local Austin pool team.</p>
+                        Weekly maintenance, repairs, and green pool recovery from your local {{city}} pool team.</p>
                     <ul class="hero-features">
                         <li><i class="fas fa-check"></i> Post-visit photo report after every visit</li>
                         <li><i class="fas fa-check"></i> No hidden fees • Chemicals included</li>
@@ -59,8 +59,8 @@
                     </ul>
                     <div class="hero-actions">
                         <a href="#quote" class="btn btn-white">Get a Free Quote</a>
-                        <a href="tel:5125557890" class="btn btn-outline-white"><i class="fas fa-phone-alt"></i> Call
-                            (512) 555-7890</a>
+                        <a href="tel:{{phone_raw}}" class="btn btn-outline-white"><i class="fas fa-phone-alt"></i> Call
+                            {{phone}}</a>
                     </div>
                 </div>
                 <!-- Right Content (Spline) -->
@@ -79,15 +79,15 @@
                     <p>POOLS MAINTAINED WEEKLY</p>
                 </div>
                 <div class="stat-item">
-                    <h3>6+</h3>
-                    <p>YEARS IN AUSTIN</p>
+                    <h3>{{years_in_business}}+</h3>
+                    <p>YEARS IN {{city|upper}}</p>
                 </div>
                 <div class="stat-item">
                     <h3>99%</h3>
                     <p>CLIENT SATISFACTION</p>
                 </div>
                 <div class="stat-item">
-                    <h3>4.9<i class="fas fa-star"></i></h3>
+                    <h3>{{rating}}<i class="fas fa-star"></i></h3>
                     <p>GOOGLE RATING</p>
                 </div>
             </div>
@@ -97,7 +97,7 @@
             <div class="container">
                 <div class="section-header">
                     <span class="subheading">WHAT WE DO</span>
-                    <h2>Complete Pool Care for Austin<br>Homes & Businesses</h2>
+                    <h2>Complete Pool Care for {{city}}<br>Homes & Businesses</h2>
                     <p>From weekly cleaning to emergency repairs, our locally trained technicians handle every aspect of
                         pool ownership. All work backed by our satisfaction guarantee.</p>
                 </div>
@@ -136,7 +136,7 @@
                         <div class="icon-wrapper"><i class="fas fa-temperature-high"></i></div>
                         <h3>Pool Heater & Chiller Service</h3>
                         <p>Installation, repair, and seasonal maintenance for gas heaters, heat pumps, and pool chillers
-                            — essential for Austin's extreme temps.</p>
+                            — essential for {{city}}'s extreme temps.</p>
                     </div>
                     <div class="service-card">
                         <div class="icon-wrapper"><i class="fas fa-sync-alt"></i></div>
@@ -220,7 +220,8 @@
                     <div class="pricing-card popular shine-border">
                         <div class="popular-badge">MOST POPULAR</div>
                         <h3>Full Service</h3>
-                        <p class="pricing-desc">Our most popular plan — everything a busy Austin homeowner needs to keep
+                        <p class="pricing-desc">Our most popular plan — everything a busy {{city}} homeowner needs to
+                            keep
                             the pool swim-ready year round.</p>
                         <div class="price">
                             <span class="currency">$</span><span class="amount">175</span><span
@@ -268,14 +269,15 @@
             <div class="container">
                 <div class="section-header">
                     <span class="subheading">TESTIMONIALS</span>
-                    <h2>Loved by Austin Neighbors</h2>
+                    <h2>Loved by {{city}} Neighbors</h2>
                 </div>
                 <div class="reviews-grid">
                     <div class="review-card shine-border">
                         <span class="review-category">RESORT LIVING PLAN</span>
                         <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                 class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="review-text">"Having Azure means I actually enjoy my weekends again. Every Friday when
+                        <p class="review-text">"Having {{short_name}} means I actually enjoy my weekends again. Every
+                            Friday when
                             we get home, the pool is crystal clear, the report is in our inbox, and all we have to do is
                             jump in. It's like having a personal pool concierge."</p>
                         <div class="reviewer-info">
@@ -283,7 +285,7 @@
                                 class="reviewer-img">
                             <div>
                                 <h4>David & Laura Williams</h4>
-                                <p>Circle C Ranch, Austin TX</p>
+                                <p>{{neighborhood_1}}, {{city}} {{state}}</p>
                             </div>
                             <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
                                 alt="Google Review" class="google-watermark">
@@ -294,7 +296,8 @@
                         <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                 class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                         <p class="review-text">"I've had pools for over 15 years and gone through many pool service
-                            companies. Azure is hands-down the best in the greater Austin area. Their tech Zach is
+                            companies. {{short_name}} is hands-down the best in the greater {{city}} area. Their tech
+                            Zach is
                             proactive about spotting equipment issues before they become expensive problems. Highly
                             recommend."</p>
                         <div class="reviewer-info">
@@ -302,7 +305,7 @@
                                 class="reviewer-img">
                             <div>
                                 <h4>Marcus Thompson</h4>
-                                <p>Pflugerville, Austin TX</p>
+                                <p>{{neighborhood_2}}, {{city}} {{state}}</p>
                             </div>
                             <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
                                 alt="Google Review" class="google-watermark">
@@ -312,7 +315,8 @@
                         <span class="review-category">COMMERCIAL POOL SERVICE</span>
                         <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                 class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="review-text">"We run a small boutique hotel and Azure handles both of our pools and
+                        <p class="review-text">"We run a small boutique hotel and {{short_name}} handles both of our
+                            pools and
                             the spa. They understand commercial compliance requirements and always keep us
                             inspection-ready. Their monthly detailed water testing report is incredibly thorough."</p>
                         <div class="reviewer-info">
@@ -320,7 +324,7 @@
                                 class="reviewer-img">
                             <div>
                                 <h4>Patricia Nguyen</h4>
-                                <p>Downtown Austin</p>
+                                <p>Downtown {{city}}</p>
                             </div>
                             <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
                                 alt="Google Review" class="google-watermark">
@@ -342,7 +346,7 @@
                 <div class="section-header">
                     <span class="subheading">GOT QUESTIONS?</span>
                     <h2>Frequently Asked Questions</h2>
-                    <p>Everything Austin pool owners ask us before getting started. Can't find your answer? Give us a
+                    <p>Everything {{city}} pool owners ask us before getting started. Can't find your answer? Give us a
                         call — we love talking pools.</p>
                 </div>
 
@@ -353,7 +357,7 @@
                             <button class="faq-toggle"><i class="fas fa-chevron-up"></i></button>
                         </div>
                         <div class="faq-answer">
-                            <p>For best performance and water quality, we recommend weekly service. Austin's heat,
+                            <p>For best performance and water quality, we recommend weekly service. {{city}}'s heat,
                                 pollen, and Live Oak debris make weekly maintenance essential to keep your water safe,
                                 your equipment running smoothly, and to catch small issues before they become costly
                                 repairs.</p>
@@ -398,12 +402,12 @@
         <section class="cta-banner">
             <div class="container cta-container">
                 <h2>Ready to Reclaim Your Weekends?</h2>
-                <p>Stop spending Saturday mornings testing chemicals and skimming leaves. Let your local Austin pool
+                <p>Stop spending Saturday mornings testing chemicals and skimming leaves. Let your local {{city}} pool
                     experts handle it — so you can just enjoy the splash.</p>
                 <div class="hero-actions justify-center">
                     <a href="#quote" class="btn btn-white">Get Your Free Quote</a>
-                    <a href="tel:5125557890" class="btn btn-outline-white"><i class="fas fa-phone-alt"></i> Call (512)
-                        555-7890</a>
+                    <a href="tel:{{phone_raw}}" class="btn btn-outline-white"><i class="fas fa-phone-alt"></i> Call
+                        {{phone}}</a>
                 </div>
             </div>
         </section>
@@ -412,31 +416,31 @@
             <div class="container">
                 <div class="section-header">
                     <span class="subheading">WE'RE IN THE NEIGHBORHOOD</span>
-                    <h2>Proudly Serving Greater Austin</h2>
-                    <p>Our locally owned team covers all of greater Austin and surrounding communities. Wherever your
+                    <h2>Proudly Serving Greater {{city}}</h2>
+                    <p>Our locally owned team covers all of greater {{city}} and surrounding communities. Wherever your
                         pool
                         is, we've probably got a truck nearby.</p>
                 </div>
 
                 <div class="areas-pills">
-                    <span class="area-pill">Downtown Austin</span>
-                    <span class="area-pill">Westlake Hills</span>
-                    <span class="area-pill">Lakeway</span>
-                    <span class="area-pill">Cedar Park</span>
-                    <span class="area-pill">Round Rock</span>
-                    <span class="area-pill">Pflugerville</span>
-                    <span class="area-pill">Steiner Ranch</span>
-                    <span class="area-pill">Circle C Ranch</span>
-                    <span class="area-pill">Bee Cave</span>
-                    <span class="area-pill">Dripping Springs</span>
-                    <span class="area-pill">Georgetown</span>
-                    <span class="area-pill">Leander</span>
-                    <span class="area-pill">Kyle</span>
-                    <span class="area-pill">Buda</span>
-                    <span class="area-pill">Tarrytown</span>
-                    <span class="area-pill">Northwest Hills</span>
-                    <span class="area-pill">Great Hills</span>
-                    <span class="area-pill">Barton Creek</span>
+                    <span class="area-pill">{{neighborhood_1}}</span>
+                    <span class="area-pill">{{neighborhood_2}}</span>
+                    <span class="area-pill">{{neighborhood_3}}</span>
+                    <span class="area-pill">{{neighborhood_4}}</span>
+                    <span class="area-pill">{{neighborhood_5}}</span>
+                    <span class="area-pill">{{neighborhood_6}}</span>
+                    <span class="area-pill">{{neighborhood_7}}</span>
+                    <span class="area-pill">{{neighborhood_8}}</span>
+                    <span class="area-pill">{{neighborhood_9}}</span>
+                    <span class="area-pill">{{neighborhood_10}}</span>
+                    <span class="area-pill">{{neighborhood_11}}</span>
+                    <span class="area-pill">{{neighborhood_12}}</span>
+                    <span class="area-pill">{{neighborhood_13}}</span>
+                    <span class="area-pill">{{neighborhood_14}}</span>
+                    <span class="area-pill">{{neighborhood_15}}</span>
+                    <span class="area-pill">{{neighborhood_16}}</span>
+                    <span class="area-pill">{{neighborhood_17}}</span>
+                    <span class="area-pill">{{neighborhood_18}}</span>
                 </div>
 
                 <div class="trust-features-grid">
@@ -458,7 +462,7 @@
                         <i class="fas fa-star"></i>
                         <div>
                             <h4>4.9-Star Elite</h4>
-                            <p>500+ Google reviews</p>
+                            <p>{{reviews_count}}+ Google reviews</p>
                         </div>
                     </div>
                     <div class="trust-feature">
@@ -479,14 +483,14 @@
                     <h2>Get Your Free, No-Obligation Quote</h2>
                     <p class="contact-desc">Tell us about your pool and we'll send a transparent quote within 24 hours.
                         No
-                        pressure, no sales pitch — just honest pricing from your Austin neighbors.</p>
+                        pressure, no sales pitch — just honest pricing from your {{city}} neighbors.</p>
 
                     <div class="contact-methods">
                         <div class="contact-method">
                             <div class="cm-icon"><i class="fas fa-phone-alt"></i></div>
                             <div class="cm-text">
                                 <h4>Call or Text Us</h4>
-                                <a href="tel:5125557890" class="cm-link">(512) 555-7890</a>
+                                <a href="tel:{{phone_raw}}" class="cm-link">{{phone}}</a>
                                 <p>Mon-Sat 7am-7pm · Emergency line 24/7</p>
                             </div>
                         </div>
@@ -494,7 +498,7 @@
                             <div class="cm-icon"><i class="far fa-envelope"></i></div>
                             <div class="cm-text">
                                 <h4>Email Us</h4>
-                                <a href="mailto:hello@azurepoolcare.com" class="cm-link">hello@azurepoolcare.com</a>
+                                <a href="mailto:{{email}}" class="cm-link">{{email}}</a>
                                 <p>We respond within a few hours</p>
                             </div>
                         </div>
@@ -502,14 +506,14 @@
                             <div class="cm-icon"><i class="fas fa-map-marker-alt"></i></div>
                             <div class="cm-text">
                                 <h4>Locally Owned & Operated</h4>
-                                <p>Proudly serving greater Austin, TX since 2018</p>
+                                <p>Proudly serving greater {{city}}, {{state}} since {{founded_year}}</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="contact-trust">
                         <span><i class="fas fa-shield-alt"></i> Licensed & Insured</span>
-                        <span><i class="fas fa-star"></i> 4.9★ on Google</span>
+                        <span><i class="fas fa-star"></i> {{rating}}★ on Google</span>
                         <span><i class="fas fa-certificate"></i> CPO Certified</span>
                     </div>
                 </div>
@@ -576,9 +580,9 @@
     <footer class="main-footer">
         <div class="container footer-container">
             <div class="footer-col brand-col">
-                <a href="#" class="footer-logo">Azure.</a>
-                <p>Austin's premium pool care experts. We handle the chemistry and the sweat so you can just enjoy the
-                    splash. Serving greater Austin since 2018.</p>
+                <a href="#" class="footer-logo">{{short_name}}.</a>
+                <p>{{city}}'s premium pool care experts. We handle the chemistry and the sweat so you can just enjoy the
+                    splash. Serving greater {{city}} since {{founded_year}}.</p>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -608,14 +612,14 @@
             <div class="footer-col">
                 <h4>Contact</h4>
                 <ul>
-                    <li><a href="tel:5125557890">(512) 555-7890</a></li>
-                    <li><a href="mailto:hello@azurepoolcare.com">hello@azurepoolcare.com</a></li>
-                    <li>Austin, Texas</li>
+                    <li><a href="tel:{{phone_raw}}">{{phone}}</a></li>
+                    <li><a href="mailto:{{email}}">{{email}}</a></li>
+                    <li>{{city}}, {{state}}</li>
                 </ul>
             </div>
         </div>
         <div class="container footer-bottom">
-            <p>&copy; 2024 Azure Pool Care. All rights reserved.</p>
+            <p>&copy; 2024 {{business_name}}. All rights reserved.</p>
             <div class="footer-legal">
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
