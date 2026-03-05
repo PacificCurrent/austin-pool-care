@@ -1077,6 +1077,74 @@ a {
     text-align: center;
 }
 
+/* Shine Border Component */
+.shine-border {
+    position: relative;
+    overflow: hidden;
+    background: var(--bg-white);
+    isolation: isolate;
+}
+
+.shine-border::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    /* Border width equivalent */
+    z-index: -1;
+    border-radius: inherit;
+    background: conic-gradient(from var(--border-angle, 0deg),
+            transparent 20%,
+            #FF007F,
+            #39FF14,
+            #00FFFF,
+            transparent 80%);
+    animation: shine-border-spin 3s linear infinite;
+}
+
+.shine-border::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    /* Inner cut-out matching border width */
+    background: inherit;
+    z-index: -1;
+    border-radius: calc(inherit - 2px);
+}
+
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+}
+
+@keyframes shine-border-spin {
+    to {
+        --border-angle: 1turn;
+    }
+}
+
+/* Fallback for browsers that don't support @property (like older Webkit/Firefox) */
+@supports not (background: paint(something)) {
+    .shine-border::before {
+        background: conic-gradient(transparent 20%,
+                #FF007F,
+                #39FF14,
+                #00FFFF,
+                transparent 80%);
+        animation: fallback-spin 3s linear infinite;
+    }
+}
+
+@keyframes fallback-spin {
+    from {
+        transform: rotate(0deg) scale(1.5);
+    }
+
+    to {
+        transform: rotate(360deg) scale(1.5);
+    }
+}
+
 /* Footer Section */
 .main-footer {
     background-color: var(--dark-band);
